@@ -727,6 +727,7 @@ async function setup(testName: string): Promise<void> {
     branchDelete: jest.fn(),
     branchExists: jest.fn(),
     branchList: jest.fn(),
+    disableSparseCheckout: jest.fn(),
     sparseCheckout: jest.fn(),
     sparseCheckoutNonConeMode: jest.fn(),
     checkout: jest.fn(),
@@ -795,7 +796,8 @@ async function setup(testName: string): Promise<void> {
     ),
     tryDisableAutomaticGarbageCollection: jest.fn(),
     tryGetFetchUrl: jest.fn(),
-    tryReset: jest.fn()
+    tryReset: jest.fn(),
+    version: jest.fn()
   }
 
   settings = {
